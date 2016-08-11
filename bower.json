@@ -1,0 +1,21 @@
+{
+  "name": "konvajs-search-extensions",
+  "homepage": "https://github.com/EugeneSqr/konvajs-search-extensions",
+  "description": "Extends Konvajs searching capabilities",
+  "main": "konvajs-search-extensions.js",
+  "keywords": [
+    "konvajs",
+    "search"
+  ],
+  "authors": [
+    "EugeneSqr"
+  ],
+  "license": "GNU GENERAL PUBLIC LICENSE v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "konvajs-search-extensions",
+  "version": "1.0.0",
+  "description": "Extends konvajs searching capabilities",
+  "main": "konvajs-search-extensions.js",
+  "devDependencies": {
+    "jshint": "^2.9.2",
+    "minifier": "^0.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "minify ./konvajs-search-extensions.js",
+    "lint": "jshint ./konvajs-search-extensions.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EugeneSqr/konvajs-search-extensions.git"
+  },
+  "keywords": [
+    "konvajs",
+    "search"
+  ],
+  "author": "EugeneSqr",
+  "license": "GNU GENERAL PUBLIC LICENSE v3",
+  "bugs": {
+    "url": "https://github.com/EugeneSqr/konvajs-search-extensions/issues"
+  },
+  "homepage": "https://github.com/EugeneSqr/konvajs-search-extensions"
+}
