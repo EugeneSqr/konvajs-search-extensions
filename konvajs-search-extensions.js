@@ -1,4 +1,6 @@
 (function(Konva) {
+    "use strict";
+
     var attributeNames = ["id", "name"];
 
     var _getId = Konva.Node.prototype.getId;
