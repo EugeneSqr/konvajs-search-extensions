@@ -18,7 +18,9 @@
         var attrs = _getAttrs.call(this);
         if (attrs) {
             attributeNames.forEach(function(attributeName) {
-                attrs[attributeName] = decodeSpaces(attrs[attributeName]);
+                if (attrs.hasOwnProperty(attributeName)) {
+                    attrs[attributeName] = decodeSpaces(attrs[attributeName]);
+                }
             });
         }
 
@@ -29,7 +31,9 @@
     Konva.Node.prototype.setAttrs = function(attrs) {
         if (attrs) {
             attributeNames.forEach(function(attributeName) {
-                attrs[attributeName] = encodeSpaces(attrs[attributeName]);
+                if (attrs.hasOwnProperty(attributeName)) {
+                    attrs[attributeName] = encodeSpaces(attrs[attributeName]);
+                }
             });
         }
 
