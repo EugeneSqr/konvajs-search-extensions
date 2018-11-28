@@ -45,11 +45,14 @@
         return _find.call(this, encodeSpaces(selector));
     };
 
+    var _findOne = Konva.Container.prototype.findOne;
+    Konva.Container.prototype.findOne = function(selector) {
+        return _findOne.call(this, encodeSpaces(selector));
+    };
 
     function encodeSpaces(original) {
         return (original) ? original.replace(" ", "%20") : original;
     }
-
 
     function decodeSpaces(encoded) {
         return (encoded) ? encoded.replace("%20", " ") : encoded;
