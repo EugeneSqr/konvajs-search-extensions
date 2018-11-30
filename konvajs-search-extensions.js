@@ -51,10 +51,10 @@
     };
 
     function encodeSpaces(original) {
-        return (original) ? original.replace(" ", "%20") : original;
+        return (original) ? original.replace(/ /g, "%20") : original;
     }
 
     function decodeSpaces(encoded) {
-        return (encoded) ? encoded.replace("%20", " ") : encoded;
+        return (encoded) ? encoded.replace(/%20/g, " ") : encoded;
     }
 })(Konva);
